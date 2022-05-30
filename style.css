@@ -5,6 +5,11 @@ body {
     font-family: Lato, sans-serif;
 }
 
+input,
+button {
+    outline: none;
+}
+
 .header-container {
     width: 500px;
     margin: 0 auto;
@@ -48,11 +53,6 @@ body {
     padding: 0px;
 }
 
-input,
-button {
-    outline: none;
-}
-
 .btn-add,
 .btn-edit,
 .btn-delete {
@@ -72,7 +72,7 @@ button {
 }
 
 /* Heading */
-h3 {
+.section-header {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -84,6 +84,7 @@ h3 {
 
 #new-task {
     display: inline-block;
+    width: 318px;
 }
 
 .input-task {
@@ -103,19 +104,9 @@ h3 {
     color: #333;
 }
 
-/* New Task */
-label[for="new-task"] {
-    display: block;
-    margin: 0 0 20px;
-}
-
-input#new-task {
-    width: 318px;
-}
 
 /* Task list */
-.task-list-string,
-li {
+.task-list-string {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -125,38 +116,33 @@ li {
     align-items: center;
 }
 
-li>* {
-    vertical-align: middle;
-}
-
-li>input[type="checkbox"] {
+#checkbox {
     margin: 0 10px;
 }
 
-li>label,
-.task-list-string > label {
+.label-task {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-li > .input-task {
+.input-task {
     width: 226px
 }
 
-.btn-delete img {
+.delete-img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-.btn-delete img:hover {
+.delete-img:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks label {
+#completed-tasks .label-task {
     text-decoration: line-through;
     color: #888;
 }

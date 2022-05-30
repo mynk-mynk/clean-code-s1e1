@@ -20,7 +20,7 @@
     <main>
         <div class="main-container">
             <section id="add-item">
-                <h3>Add Item</h3>
+                <h3 class="section-header">Add Item</h3>
                 <div class="tasks-list" id="add-tasks">
                     <div class="task-list-string">
                         <input id="new-task" class="input-task" type="text">
@@ -30,34 +30,34 @@
             </section>
 
             <section id="todo-item">
-                <h3>Todo</h3>
+                <h3 class="section-header">Todo</h3>
                 <div class="tasks-list" id="incomplete-tasks">
                     <div class="task-list-string">
-                        <input type="checkbox">
+                        <input id="checkbox" type="checkbox">
                         <label class="label-task">Pay Bills</label>
                         <input type="text" class="input-task">
                         <button class="btn-edit">Edit</button>
-                        <button class="btn-delete"><img src="./remove.svg"></button>
+                        <button class="btn-delete"><img class="delete-img" src="./remove.svg"></button>
                     </div>
                     <div class="task-list-string edit-mode">
-                        <input type="checkbox">
+                        <input id="checkbox" type="checkbox">
                         <label class="label-task">Go Shopping</label>
                         <input type="text" value="Go Shopping" class="input-task">
                         <button class="btn-edit">Save</button>
-                        <button class="btn-delete"><img src="./remove.svg"></button>
+                        <button class="btn-delete"><img class="delete-img" src="./remove.svg"></button>
                     </div>
                 </div>
             </section>
 
             <section id="completed-item">
-                <h3>Completed</h3>
+                <h3 class="section-header">Completed</h3>
                 <div class="tasks-list" id="completed-tasks">
                     <div class="task-list-string">
-                        <input type="checkbox" checked>
+                        <input id="checkbox" type="checkbox" checked>
                         <label class="label-task">See the Doctor</label>
                         <input type="text" class="input-task">
                         <button class="btn-edit">Edit</button>
-                        <button class="btn-delete"><img src="./remove.svg"></button>
+                        <button class="btn-delete"><img class="delete-img" src="./remove.svg"></button>
                     </div>
                 </div>
             </section>
