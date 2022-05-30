@@ -38,10 +38,6 @@ button {
     flex-grow: 1;
 }
 
-.task-row-container {
-    display: flex;
-}
-
 .tasks-list {
     margin: 0;
     padding: 0px;
