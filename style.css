@@ -12,7 +12,7 @@ body {
     text-align: right;
 }
 
-.header-container img {
+.header-container .header-img {
     width: 100%;
 }
 
@@ -42,13 +42,12 @@ body {
     display: flex;
 }
 
-ul {
+.tasks-list {
     margin: 0;
     padding: 0px;
 }
 
-li,
-h3 {
+li {
     list-style: none;
 }
 
@@ -57,7 +56,9 @@ button {
     outline: none;
 }
 
-button {
+.btn-add,
+.btn-edit,
+.btn-delete {
     background: none;
     border: 0px;
     color: #888;
@@ -67,13 +68,15 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.btn-add:hover,
+.btn-edit:hover,
+.btn-delete:hover {
     color: #3a3A3a;
 }
 
 /* Heading */
 h3,
-label[for="new-task"] {
+.add-new-task {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -140,13 +143,13 @@ li>input[type="text"] {
     width: 226px
 }
 
-button.delete img {
+.btn-delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.btn-delete img:hover {
     transform: rotateZ(0);
 }
 
